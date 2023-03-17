@@ -1,1 +1,1 @@
-Essse Projeto é um aperfeiçoado do projeto_landpage.
+Essse Projeto é um aperfeiçoamento do projeto_landpage.
