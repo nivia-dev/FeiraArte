@@ -182,6 +182,9 @@ figcaption {
     text-align: center;
 }
 
+figcaption p {
+    font-size: 1.2rem;
+}
 
 .mapa {
     overflow: visible;
