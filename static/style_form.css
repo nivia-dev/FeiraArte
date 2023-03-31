@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #e6dfda;
+    --cor1: #f3ceb0;
+    --cor2: #c9976bfd;
+    --cor3: #86450b;
+
+    --font-padrão: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: var(--font-padrão);
+    font-size: 65%;
+    color: var(--cor3);
+}
+
+header > h1 {
+    padding-bottom: 10px;
+    margin-left: 20%;
+} 
+
+fieldset {
+    border: 0;
+    display: inline-block;
+}
+
+
+
+body{
+    background-color:var(--cor0);
+    font-size: 1.6rem;
+    color: var(--cor3);
+    margin-left: 25%;
+    margin-top: 2%;
+    justify-content: center;
+    
+}
+
+input, textarea {
+    font-size: 1.5rem;
+    color: var(--cor3);
+    border-radius: 5px;
+}
+
+
+.campo, .campos{
+    margin-bottom: 1.5rem;   
+}
+
+.campo label {
+    margin-bottom: 0.8rem;
+    color: var(--cor3);
+    display: block;
+}
+
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1.2rem; 
+   }
+
+.campos input[type="text"] {
+    padding: 0.5rem;
+    width: 20%;
+    border: 1px solid var(--cor3);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display:inline; 
+}
+.campos label {
+    padding-right: 15px;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo textarea {
+    padding: 0.5rem;
+    width: 70%;
+    border: 1px solid var(--cor3);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+#check {
+    display: inline-block;
+    margin-right: 10px;  
+}
+
+#check > label {
+    margin-right: 10px;
+}
+
+textarea {
+    height: 15vh;
+}
+
+
+.botoes {
+    max-width: 70%;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: right;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+a:hover {
+    color: white;
+}
+
+.botao {
+    font-size: 2rem;
+    background: var(--cor1);
+    color: var(--cor3);
+    margin-bottom: 1.2rem;
+    margin-right: 20px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    transform: translate(-50%, -50%);  
+}
+
+
+.botao:hover {
+    background: var(--cor3);
+    color: white;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;   
+}
+
+.botao {
+    cursor: pointer;
+}
+
+@media (max-width: 860px) {
+    #check {
+        margin-right: 70px;
+    }
+}
