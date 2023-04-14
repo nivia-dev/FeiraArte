@@ -16,8 +16,7 @@ window.onload = function() {
     });
     }
 
-
-    const openContatoButton = document.querySelector("#open-contato");
+const openContatoButton = document.querySelector("#open-contato");
 const closeContatoButton = document.querySelector("#close-contato");
 const modals = document.querySelector("#modal");
 const fades = document.querySelector("#fade");
@@ -33,3 +32,17 @@ const toggleModal = () => {
 [openContatoButton, closeContatoButton, fades].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
+
+
+
+function f() {
+  document.getElementsByClassName('dropdown')[0].classList.toggle('down');
+  document.getElementsByClassName('arrow')[0].classList.toggle('gone');
+  if (document.getElementsByClassName('dropdown')[0].classList.contains('down')) {
+    setTimeout(function() {
+      document.getElementsByClassName('dropdown')[0].style.overflow = 'visible'
+    }, 500)
+  } else {
+    document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden'
+  }
+}
