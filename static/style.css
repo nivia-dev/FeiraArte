@@ -250,6 +250,57 @@ figcaption p {
     font-size: 1.2rem;
 }
 
+
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+    width: 50%;
+    margin: 20px;
+    flex: 1 1 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.card .content {
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    list-style: none;
+}
+
+
+.card a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.card:hover {
+    background-color: var(--cor3);
+    color: white;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px brown;
+    border-color: var(--cor3);
+}
+/*
 .video {
     margin: auto;
     padding: 20px;
@@ -264,6 +315,7 @@ figcaption p {
     width: 90%;
     height: 90%;
 }
+*/
 
 .mapa {
     overflow: visible;
@@ -275,8 +327,8 @@ figcaption p {
 }
 
 .mapa >iframe {
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
     position: absolute;
 }
 aside {
@@ -448,5 +500,7 @@ button#close-contato, #close-sobre {
     .menu{
         width:150px;
     }
+
+
 
 }
