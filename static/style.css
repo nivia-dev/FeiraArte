@@ -180,7 +180,7 @@ a:hover {
 }
 
 button, nav {
-    margin-top: -10px;
+    margin-top: -30px;
     font-size: 2rem;
 }
 
@@ -261,6 +261,76 @@ figcaption p {
 
 }
 
+.carousel {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+ 
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bar:hover {
+    background-color: white;
+    transition: .4s;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    width: 400%;
+}
+
+.slide {
+    width: 25%;
+    transition: .6s;
+}
+
+.slide img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -75%;
+}
+
+
 .card {
     position: relative;
     padding: 10px;
@@ -300,22 +370,7 @@ figcaption p {
     box-shadow: 2px 20px 25px brown;
     border-color: var(--cor3);
 }
-/*
-.video {
-    margin: auto;
-    padding: 20px;
-    padding-bottom: 40%;
-    position: relative;
-}
 
-.video > iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
-*/
 
 .mapa {
     overflow: visible;
@@ -376,25 +431,6 @@ footer a:hover {
 	height: 26px;
 	width: auto;
 	display: block;
-}
-
-
-
-@media screen and (max-width: 991px) {
-  .menu-icon:checked + label,
-  .menu-icon:not(:checked) + label{
-    right: 55px;
-  }
-  .logo {
-    left: 30px;
-  }
-  .nav{
-    right: 30px;
-  }
- 
-  .nav ul li a{
-    font-size: 8vh;
-  }
 }
 
 
@@ -493,6 +529,7 @@ button#close-contato, #close-sobre {
 
 
 /* media queries*/
+
 @media (max-width: 768px) {
     html {
         font-size: 50%;
@@ -501,6 +538,27 @@ button#close-contato, #close-sobre {
         width:150px;
     }
 
+    .carousel {
+        height: 300px;
+        width: 300px;
+    }
 
+    .bar {
+        height: 14px;
+        width: 60px;
+    }
+
+}
+
+@media (max-width: 590px) {
+    .carousel {
+        height: 250px;
+        width: 250px;
+    }
+
+    .bar {
+        height: 12px;
+        width: 50px;
+    }
 
 }
