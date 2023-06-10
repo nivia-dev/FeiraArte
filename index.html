@@ -12,154 +12,147 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 
-<body>
-           
-        <div id="borda">
-            <header class="bg">
-                <img id= "logo"src="static/imagens/logo.png" alt="Logotipo Feria de Arte">
-                <div id="btn-access">
-                    <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
-                    <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+<body>           
+    <div id="borda">
+        <header class="bg">
+            <img id= "logo"src="static/imagens/logo.png" alt="Logotipo Feria de Arte">
+            <div id="btn-access">
+                <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+            </div>
+                                                            
+            <h1>FEIRA DE ARTE</h1>
+            <p> Praça da República - SP</p>
+                
+                                
+            <nav class="menu">
+                <div class="title" onclick="f()">Menu <span class="fa fa-bars"></span>
+                    <div class="arrow"></div>
                 </div>
-                                                              
-                    <h1>FEIRA DE ARTE</h1>
-                    <p> Praça da República - SP</p>
+                <div class="dropdown">
+                    <p><a id="open-contato" href="#">Contato <span class="fa fa-inbox"></span></a></p>
                     
-                                  
-                    <nav class="menu">
-                        <div class="title" onclick="f()">Menu <span class="fa fa-bars"></span>
-                            <div class="arrow"></div>
-                        </div>
-                        <div class="dropdown">
-                            <p><a href="#">Contato <span class="fa fa-inbox"></span></a></p>
-                            <p><a href="#">Artistas <span class="fa fa-gear"></span></a></p>
-                            <p>
-                                <a href="formulario.html">Cadastro<span class="fa fa-sign-out"></span></a>
-                            </p>
-                            </div>
-                        </nav>
-                        <button class="botao"><a href="#gps">Localização<img src="static/imagens/gps.svg"></svg></a></button>
-                        <button class="botao" id="open-contato"> Contato</a></button>
-                    
-                    
-                    
-            </header>
-            
-                       
-            <main>
-                
-                <section>
-                    <h1>Origem da feira</h1>
-                    <p>A partir dos anos 40 colecionadores de selos e moedas começaram a se concentrar na Praça da República(SP) aos domingos. No final dos anos 60 se juntaram a eles artistas e artesãos, transformando-a numa galeria de arte a céu aberto.</p>
-                    <p>A chamada "Feira Hippie" foi oficializada pelo Prefeito Faria Lima e, há muitos anos, é uma referência para São Paulo, para o Brasil e para o Mundo, hoje conhecida como FEIRA DE ARTE, ARTESANATO E GASTRONOMIA DA PRAÇA DA REPÚBLICA.</p>
-                </section>
-                
-                <section>
-                        <figure>
-                            <img src="static/imagens/foto_exp.jpg" alt="Exposição da feira">
-                            <img src="static/imagens/qa.jpg" alt="Quadros Agaleron" usemap="#qaga">
-                            <img src="static/imagens/qs.jpg" alt="Telas Sandra">
-                            <figcaption>Exposição aos Domingos</figcaption>
-                            <figcaption>Quadros Agaleron<p>passe o mouse sobre o quadro de circulo</p></figcaption>
-                            <figcaption>Tela Óleo Sandra Castro</figcaption>
-                         </figure>
-                         <map name="qaga">
-                             <area shape="circle" coords="200 200 100" href="#" alt="Quadro" title="Escultura sobre Tela">
-                         </map>
-                         
-                        <div class="carousel">
-                            <div class="slides">
-                                <input type="radio" id="slide1" name="slide" checked>
-                                <input type="radio" id="slide2" name="slide">
-                                <input type="radio" id="slide3" name="slide">
-                                <input type="radio" id="slide4" name="slide">
-                                                               
+                    <p><a href="formulario.html">Cadastro<span class="fa fa-sign-out"></span></a></p>
+                </div>
+            </nav>
 
-                                <div class="slide s1">
-                                    <img src="static/imagens/QC08A.jpg" alt="Quadro 80x80cm">
-                                </div>
-                                <div class="slide">
-                                    <img src="static/imagens/QC05g.jpg" alt="Quadro 80x80cm">
-                                </div>
-                                <div class="slide">
-                                    <img src="static/imagens/Icir11.jpg" alt="Quadro 20x20cm">
-                                </div>
-                                <div class="slide">
-                                    <img src="static/imagens/Ibeija-flor.jpg" alt="Quadro 20x20cm">
-                                </div>
-                            </div>
-
-                            <div class="navigation">
-                                <label class="bar"for="slide1"></label>
-                                <label class="bar"for="slide2"></label>
-                                <label class="bar"for="slide3"></label>
-                                <label class="bar"for="slide4"></label>
-                            </div>
-                        </div>
-                    
-                         <div class="container">
-                            <div class="card">
-                                <h1>Setores da Feira</h1>
-                                <ul class="content">
-                                    <li>Artes Plásticas</li>                                 <li>Artesanato</li>
-                                    <li>Filateria</li>
-                                    <li>Numismática</li>
-                                    <li>Pedras</li>
-                                    <li>Gastronomia</li>
-                                </ul>
-                            </div>
-    
-                            <div class="card">
-                            <h1>Conheça a Feira</h1>
-                                <p>Assista ao video e conheça alguns expositores da Feira</p>
-                                <a href= "https://youtu.be/TbKqx1NFaFY" target="_blank" rel="external" alt="Video Praça da República">Clique aqui</a>
-                            </div>
-                        </div>
-                    </section>
+            <button class="botao"><a href="#gps">Localização<img src="static/imagens/gps.svg"></a></button>
                         
-                            
-                                      
-                                                
-                            <a name ="gps"></a>
-                            <div class="mapa">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6783843507865!2d-46.64469488453117!3d-23.544067266840102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584fb651f531%3A0xbc6c0eeefa6f2dc0!2sPra%C3%A7a%20da%20Rep%C3%BAblica%20-%20Rep%C3%BAblica%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2014786-079!5e0!3m2!1spt-BR!2sbr!4v1677089466884!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </section>
+        </header>
+        
+                    
+        <main>
+            <section>
+                <h1>Origem da feira</h1>
+                <p>A partir dos anos 40 colecionadores de selos e moedas começaram a se concentrar na Praça da República(SP) aos domingos. No final dos anos 60 se juntaram a eles artistas e artesãos, transformando-a numa galeria de arte a céu aberto.</p>
+                <p>A chamada "Feira Hippie" foi oficializada pelo Prefeito Faria Lima e, há muitos anos, é uma referência para São Paulo, para o Brasil e para o Mundo, hoje conhecida como FEIRA DE ARTE, ARTESANATO E GASTRONOMIA DA PRAÇA DA REPÚBLICA.</p>
+            </section>
+            
+            <section>
+                <figure>
+                    <img src="static/imagens/foto_exp.jpg" alt="Exposição da feira">
+                    <img src="static/imagens/qa.jpg" alt="Quadros Agaleron" usemap="#qaga">
+                    <img src="static/imagens/qs.jpg" alt="Telas Sandra">
+                    <figcaption>Exposição aos Domingos</figcaption>
+                    <figcaption>Quadros Agaleron<p>passe o mouse sobre o quadro de circulo</p></figcaption>
+                    <figcaption>Tela Óleo Sandra Castro</figcaption>
+                </figure>
+                    
+                <map name="qaga">
+                    <area shape="circle" coords="200 200 100" href="#" alt="Quadro" title="Escultura sobre Tela">
+                </map>
+                        
+                <div class="carousel">
+                    <div class="slides">
+                        <input type="radio" id="slide1" name="slide" checked>
+                        <input type="radio" id="slide2" name="slide">
+                        <input type="radio" id="slide3" name="slide">
+                        <input type="radio" id="slide4" name="slide">                               
+
+                        <div class="slide s1">
+                            <img src="static/imagens/QC08A.jpg" alt="Quadro 80x80cm">
+                        </div>
+
+                        <div class="slide">
+                            <img src="static/imagens/QC05g.jpg" alt="Quadro 80x80cm">
+                        </div>
+
+                        <div class="slide">
+                            <img src="static/imagens/Icir11.jpg" alt="Quadro 20x20cm">
+                        </div>
+
+                        <div class="slide">
+                            <img src="static/imagens/Ibeija-flor.jpg" alt="Quadro 20x20cm">
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <label class="bar"for="slide1"></label>
+                        <label class="bar"for="slide2"></label>
+                        <label class="bar"for="slide3"></label>
+                        <label class="bar"for="slide4"></label>
+                    </div>
+                </div>
                 
+                <div class="container">
+                    <div class="card">
+                        <h1>Setores da Feira</h1>
+                        <ul class="content">
+                            <li>Artes Plásticas</li>                                 <li>Artesanato</li>
+                            <li>Filateria</li>
+                            <li>Numismática</li>
+                            <li>Pedras</li>
+                            <li>Gastronomia</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                    <h1>Conheça a Feira</h1>
+                        <p>Assista ao video e conheça alguns expositores da Feira</p>
+                        <a href= "https://youtu.be/TbKqx1NFaFY" target="_blank" rel="external" alt="Video Praça da República">Clique aqui</a>
+                    </div>
+                </div>
+            </section>
+                                    
+            <section>                        
+                <a name ="gps"></a>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6783843507865!2d-46.64469488453117!3d-23.544067266840102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584fb651f531%3A0xbc6c0eeefa6f2dc0!2sPra%C3%A7a%20da%20Rep%C3%BAblica%20-%20Rep%C3%BAblica%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2014786-079!5e0!3m2!1spt-BR!2sbr!4v1677089466884!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
                     
-               
-                <aside>
-                    <h2>Conheça também:</h2>
-                        <h1>Associação Paulista de Belas Artes</h1>
-                        <img src="static/imagens/logo_apba.jpg" alt="Logotipo da APBA">
-                        <p>Uma Associação para os Artistas do Presente e do Futuro.
+            <aside>
+                <h2>Conheça também:</h2>
+                <h1>Associação Paulista de Belas Artes</h1>
+                <img src="static/imagens/logo_apba.jpg" alt="Logotipo da APBA">
+                <p>Uma Associação para os Artistas do Presente e do Futuro.
 
-                            Fundada em 1942 e declarada Utilidade Pública por Decreto Federal 23.460 de 02/08/1947, sempre honrou o compromisso primaz de fomentar artes plásticas em geral(desenho, pintura, escultura, etc.) tanto no âmbito pedagógico (oferecendo cursos livres), quanto no incentivo ao aperfeiçoamento dos artistas – com a realização de Salões, mostras coletivas ou individuais. Para saber mais acesse <a href="https://apba.com.br/" target="_blank" rel="external" alt="Site APBA">aqui</a></p>
-                            
-                    
-                </aside>
-            </main>
-            <!-- Modal Contato-->
-    <div id="fade" class="hide"></div>
-    <div id="modal" class="hide">
-        <div class="modal-header">
-            <h2>Contato</h2>
-            <button id="close-contato">Fechar</button>
-        </div>
-        <div class="modal-body">
-            <div class="social" id="email">
-                <a href="malito:nivia.testdev@gmail.com"><img src="static/imagens/email.jpg" alt="email"></a>
+                    Fundada em 1942 e declarada Utilidade Pública por Decreto Federal 23.460 de 02/08/1947, sempre honrou o compromisso primaz de fomentar artes plásticas em geral(desenho, pintura, escultura, etc.) tanto no âmbito pedagógico (oferecendo cursos livres), quanto no incentivo ao aperfeiçoamento dos artistas – com a realização de Salões, mostras coletivas ou individuais. Para saber mais acesse <a href="https://apba.com.br/" target="_blank" rel="external" alt="Site APBA">aqui</a></p> 
+            </aside>
+        </main>
+
+        <!-- Modal Contato-->
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h2>Contato</h2>
+                <button id="close-contato">Fechar</button>
             </div>
+            <div class="modal-body">
+                <div class="social" id="email">
+                    <a href="malito:nivia.testdev@gmail.com"><img src="static/imagens/email.jpg" alt="email"></a>
+                </div>
 
-            <div class="social" id="what"><a href=" https://wa.me/5511993754206" target="_blank" rel="external"><img src="static/imagens/whatsapp.jpg" alt="whatsapp"></a>
+                <div class="social" id="what"><a href=" https://wa.me/5511993754206" target="_blank" rel="external"><img src="static/imagens/whatsapp.jpg" alt="whatsapp"></a>
+                </div>
+
+                <div class="social" id="inst"><a href="https://www.instagram.com/feirapcarepubicaforever/" target="_blank" rel="external"><img src="static/imagens/instagram.jpg" alt="instagram"></a>
+                </div>
             </div>
-
-            <div class="social" id="inst"><a href="https://www.instagram.com/feirapcarepubicaforever/" target="_blank" rel="external"><img src="static/imagens/instagram.jpg" alt="instagram"></a></div>
         </div>
-    </div>
-            <script src="static/javascript.js"></script>
-            <footer>Site desenvolvido por <a href="https://github.com/nivia-dev" target="_blank">Nívia Alves</a></footer>
-        </div>
-    
+        <script src="static/javascript.js"></script>
+        <footer>Site desenvolvido por <a href="https://github.com/nivia-dev" target="_blank">Nívia Alves</a></footer>
+    </div>  
+          
 </body>
 </html>
